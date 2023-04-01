@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Shopping Cart</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+   <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+   <section>
+      <div class="container">
+         <h2>My shopping cart</h2>
+         <div class="cart">
+            <div class="">
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/product1.png" alt="">
+                        <h5>Apple</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="fruit1-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="fruit1-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button id="fruit1-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5>Rs <span id="fruit1-total">100</span> </h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="cart-item">
+                <div class="row">
+                   <div class="col-md-7 center-item">
+                      <img src="images/product2.png" alt="">
+                      <h5>Orange</h5>
+                   </div>
+
+                   <div class="col-md-5 center-item">
+                      <div class="input-group number-spinner">
+                         <button id="fruit2-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                         <input id="fruit2-number" type="number" min="0" class="form-control text-center" value="1">
+                         <button id="fruit2-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                      </div>
+                      <h5>Rs<span id="fruit2-total">60</span> </h5>
+                   </div>
+                </div>
+             </div>
+             <div class="cart-item">
+                <div class="row">
+                   <div class="col-md-7 center-item">
+                      <img src="images/product3.jfif" alt="">
+                      <h5>guava</h5>
+                   </div>
+
+                   <div class="col-md-5 center-item">
+                      <div class="input-group number-spinner">
+                         <button id="fruit3-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                         <input id="fruit3-number" type="number" min="0" class="form-control text-center" value="1">
+                         <button id="fruit3-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                      </div>
+                      <h5>Rs <span id="fruit3-total">50</span> </h5>
+                    
+                   </div>
+                </div>
+             </div>
+
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item mx-auto">
+                        <img src="images/product4.jfif" alt="">
+                        <h5>Grapes</h5>
+                     </div>
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="fruit4-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="fruit4-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button  id="fruit4-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                        </div>
+                        <h5>Rs<span id="fruit4-total">60</span> </h5>
+                     </div>
+                  </div>
+                  
+               </div>
+               <div class="cart-item">
+                <div class="row">
+                   <div class="col-md-7 center-item mx-auto">
+                      <img src="images/product5.jfif" alt="">
+                      <h5>Pineapple</h5>
+                   </div>
+                   <div class="col-md-5 center-item">
+                      <div class="input-group number-spinner">
+                         <button id="fruit5-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                         <input id="fruit5-number" type="number" min="0" class="form-control text-center" value="1">
+                         <button  id="fruit5-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                      </div>
+                      <h5>Rs<span id="fruit5-total">40</span> </h5>
+                   </div>
+                </div>
+             </div>
+
+
+
+               <div class="cart-item">
+                  <div class="row g-2">
+
+                     <div class="col-6">
+                        <h5>Subtotal: </h5>
+                        <h5>Tax:</h5>
+                        <h5>Total:</h5>
+                     </div>
+
+                     <div class="col-6 status">
+                        <h5>Rs<span id="sub-total">310</span></h5>
+                        <h5>Rs<span id="tax-amount">0</span></h5>
+                        <h5>Rs<span id="total-price">310</span></h5>
+                     </div>
+                     
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+   </section>
+   <script src="app.js"></script>
+</body>
+</html>
